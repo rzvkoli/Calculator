@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Calculator</title>
+            <link rel="stylesheet" href="src/css/style.css">
+      </head>
+      <body>
+            <form name="calculator">
+                <!--Display-->
+                <input type="text" value="" disabled name="dispaly">
+                <!-- AC Clean -->
+                <input id="AC" type="button" value="AC" onclick="ac()" >
+                <!-- <-- Correction-->
+                <input type="button" value="&#8592" onclick="c()" >
+                <!-- % - * / + 9 8 7 6 5 4 3 2 1 -->
+                <!-- R >> Remainder -->
+                <input type="button" value="R" onclick="data(this.value)" >
+                <input type="button" value="-" onclick="data(this.value)" >
+                <input type="button" value="9" onclick="data(this.value)" >
+                <input type="button" value="8" onclick="data(this.value)" >
+                <input type="button" value="7" onclick="data(this.value)" >
+                <input type="button" value="&#215" onclick="data(this.value)" >
+                <input type="button" value="6" onclick="data(this.value)" >
+                <input type="button" value="5" onclick="data(this.value)" >
+                <input type="button" value="4" onclick="data(this.value)" >
+                <input type="button" value="&#247" onclick="data(this.value)" >
+                <input type="button" value="3" onclick="data(this.value)" >
+                <input type="button" value="2" onclick="data(this.value)" >
+                <input type="button" value="1" onclick="data(this.value)" >
+                <input type="button" value="+" onclick="data(this.value)" >
+                <input type="button" value="0"onclick="data(this.value)" >
+                <input type="button" value="."onclick="data(this.value)" >
+                <!-- = Equal-->
+                <input  id="end" type="button" value="=" onclick="equal()" >
+            </form>
+            <script src="src/js/script.js"></script>
+      </body>
+</html>
